@@ -13,4 +13,7 @@ document.getElementById('cost-estimate-form').addEventListener('submit', functio
 
     // For demo purposes, alert the user (replace with actual emailing logic)
     alert(`Your estimated build cost is £${totalCost.toLocaleString()}.`);
+
+        // Clear the form fields after the estimate is generated
+    document.getElementById('cost-estimate-form').reset();
 });
