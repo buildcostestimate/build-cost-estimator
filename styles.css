@@ -1,18 +1,13 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -21,50 +16,105 @@ header {
 header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-section {
-    margin: 20px 0;
-}
-
-h1,
-h2 {
+h1, h2, h3 {
     color: #333;
+    text-align: center;
 }
 
-p,
-ul {
-    margin: 10px 0;
+/* Hero Section */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-form {
-    max-width: 400px;
-    margin: 20px auto;
+#hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    background-color: #f4f4f4;
     border-radius: 5px;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input,
-form select,
-form button {
-    width: 100%;
-    padding: 10px;
+#hero h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+#services {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#contact .cta-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#contact .cta-button:hover {
+    background-color: #e55a5a;
+}
+
+/* Footer */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
